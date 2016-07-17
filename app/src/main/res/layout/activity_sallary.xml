@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="NAME : "
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:background="#377ef0"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:id="@+id/s_name"
+            android:background="#cccaca"
+            android:gravity="center|left"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DEPARTMENT : "
+            android:id="@+id/textView7"
+            android:gravity="center"
+            android:background="#377ef0"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:id="@+id/s_dempartment"
+            android:background="#cccaca"
+            android:gravity="center|left"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="NUMBERS : "
+            android:id="@+id/textView11"
+            android:gravity="center"
+            android:background="#377ef0"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:id="@+id/s_numbers"
+            android:background="#cccaca"
+            android:gravity="center|left"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_height="match_parent"
+                android:layout_width="320dp"
+                android:cacheColorHint="#00000000"
+                android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

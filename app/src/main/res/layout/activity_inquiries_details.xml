@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_inquiry_from"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_inquiry_details_department" />
+            
+            <TextView
+                android:id="@+id/tvInquiryDetails_from"
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/img_inquiry_from"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="from" />
+
+            <TextView
+                android:id="@+id/tvFromInquiry"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_inquiry_from"
+                android:layout_alignTop="@+id/img_inquiry_from"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:text="FROM :"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/img_inquiry_department"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_inquiry_details_department" />
+            
+            <TextView
+                android:id="@+id/tvInquiryDetails_department"
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                android:layout_alignRight="@+id/img_inquiry_department"
+                android:layout_marginBottom="5dp"
+                android:text="department"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tvDepartmentInquiry"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_inquiry_department"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:text="DEPARTMENT :"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/img_inquiry_to"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_inquiry_details_department"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/img_inquiry_to"
+             >
+
+                <TextView
+                    android:id="@+id/tvToInquiry"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/img_inquiry_to"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="TO :"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/tvInquiryDetails_to"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/img_inquiry_to"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="40dp"
+
+                    android:text="to"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/imgInquiryStatus2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/img_inquiry_details_status_open"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_inquiry_details_table"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/img_inquiry_details_table"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tvInquiryDetails_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_inquiry_details_table"
+                android:layout_centerHorizontal="true"
+                android:text="title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/tvInquiryMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInquiryDetails_title"
+                android:layout_marginLeft="16dp"
+                android:text="message"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvInquiryMessage"
+                android:gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/img_inquiryDetails_repliesCount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/tvInquiryDetails_repliesCount"
+                    android:layout_alignLeft="@+id/tvInquiryMessage"
+                    android:src="@drawable/img_inquiry_replies" />
+
+                <TextView
+                    android:id="@+id/tvInquiryDetails_repliesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvInquiryMessage"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/img_inquiryDetails_repliesCount"
+                    android:text="replies count" />
+
+                <TextView
+                    android:id="@+id/tvInquiryDetails_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvInquiryDetails_repliesCount"
+                    android:layout_alignBottom="@+id/tvInquiryDetails_repliesCount"
+                    android:layout_alignRight="@+id/imgInquiryStatus2"
+                    android:text="date"
+                    android:textColor="#EB1112"
+                    android:layout_marginLeft="100dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+           
+            
+            <ListView
+                android:id="@+id/lvInquiries_replies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffffff">
+            </ListView>
+            
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSendReply"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom">
+
+            <EditText
+                android:id="@+id/etInquiryDetails_sendInquiry"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="5dp"
+                android:background="#e7e5e5"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="1"
+                android:layout_marginTop="5dp">
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/img_button_sendInquiry1"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="false"
+                android:layout_toRightOf="@+id/etInquiryDetails_sendInquiry"
+                android:background="@null"
+                android:src="@drawable/img_inquiry_details_reply_message_button"
+                android:scaleType="fitCenter" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

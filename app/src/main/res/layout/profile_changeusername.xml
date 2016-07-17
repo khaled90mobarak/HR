@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383775">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_logo"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/c_msg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user" />
+
+        <EditText
+            android:id="@+id/c_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:hint="@string/username_edittext"
+            android:background="@android:color/transparent"
+            android:maxLines="1">
+        </EditText>
+        <requestFocus />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/c_btnchange"
+            android:layout_width="263dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_log_in_button"
+            android:maxWidth="200dp"
+            android:scaleType="fitXY"
+            android:background="#377ef0"
+            android:text="Change"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

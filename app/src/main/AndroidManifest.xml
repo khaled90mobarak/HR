@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fortopapps.hr" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- For protecting GCM messages so that only your app can receive them -->
+    <permission
+        android:name="fortopapps.hr.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="fortopapps.hr.permission.C2D_MESSAGE" />
+
+    <!-- For receiving GCM messages -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/splashScreenTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".news.Side_menuActivity"
+            android:label="@string/title_activity_news_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".attendance.Attendance"
+            android:label="@string/title_activity_attendance"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+            />
+
+
+        <activity android:name=".news.NewsDetails"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+            />
+        <activity android:name=".inquiries.InquiriesActivity"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+            />
+        <activity android:name=".inquiries.CreateInquiry"
+            android:parentActivityName="fortopapps.hr.inquiries.InquiriesActivity"
+            />
+        <activity android:name=".inquiries.InquiriesDetailsActivity"
+            android:parentActivityName="fortopapps.hr.inquiries.InquiriesActivity"
+            />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".checkinout.SendingExceptionActivity"
+            />
+        <activity android:name=".sallary.sallary"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+            />
+
+
+        <activity
+            android:name=".checkinout.checkinout"
+            android:label="@string/title_activity_checkinout"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+            />
+        <activity
+            android:name=".user.profile"
+            android:label="@string/title_activity_profile" />
+        <activity android:name=".user.changeusername" />
+        <activity
+            android:name=".user.resetpassword"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="fortopapps.hr.MainActivity"
+        />
+
+
+        <!-- For receiving GCM message and registration success -->
+        <receiver
+            android:name=".Notification.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.androidsrc.gcmsample" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Notification.GCMIntentService" />
+        <!-- make sure to add google-play-services_lib from  project properties->android->library -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

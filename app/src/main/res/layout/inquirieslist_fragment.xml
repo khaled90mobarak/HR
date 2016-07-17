@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressBar_inquiries_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout_inquiries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- place your view here -->
+
+
+
+        <ListView
+            android:id="@+id/lvInquiries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+
+
+
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageButton
+        android:id="@+id/imgbtn_createInquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/img_create_inquiry"
+
+
+        android:scaleType="fitXY"
+        android:padding="0dp" />
+
+</RelativeLayout>

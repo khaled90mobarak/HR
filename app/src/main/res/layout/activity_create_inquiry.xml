@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:background="#e3e3e3">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressbar_create_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutMainDesign"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_spinnerOne"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/img_spinnerOne"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/img_spinner"
+                android:scaleType="fitCenter" />
+
+            <Spinner
+                android:id="@+id/spinner_createInquiry_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/layout_spinnerTwo"
+            android:layout_below="@+id/layout_spinnerOne"
+
+            android:padding="0dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/img_spinnerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/img_spinner"
+                android:scaleType="fitCenter" />
+
+            <Spinner
+                android:id="@+id/spinner_createInquiry_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_spinnerTwo"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/textView1_createInquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="MESSAGE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginBottom="0dp" />
+
+
+            <EditText
+                android:id="@+id/etInquiryTitle_createInquiry"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView1_createInquiry"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="1"
+                android:hint="TITLE GOES HERE..."
+                android:paddingLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/etInquiryMessage_createInquiry"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/etInquiryTitle_createInquiry"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="5"
+                android:hint="SUBJECT GOES HERE...."
+                android:paddingLeft="5dp"
+                android:gravity="top" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/imgbtn_sendInquiry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/imgbtn_send_inquiry"
+                android:scaleType="fitCenter" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

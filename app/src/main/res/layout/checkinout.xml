@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#d5d5d5"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+
+
+            <RelativeLayout
+                android:id="@+id/layoutData"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/imgViewUseless"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/img_checkinout_location"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/lastcheckin"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/img_checkInOut_checkIn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/img_checkinout_checkin"
+                    android:layout_marginRight="50dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tvCheckinout_location"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:layout_marginTop="100dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvCheckinout_checkingStatus"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvCheckinginout_date"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:text=""
+                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvCheckinout_time"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="230dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:id="@+id/imgViewUseless"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/img_checkinout_laststatus"
+                android:scaleType="fitCenter" />
+
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/layoutChecking"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/nextstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check in/out"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="10dp" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_checkinout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/nextstatus"
+                android:background="@null"
+                android:src="@drawable/img_checkinout_button"
+                android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+        <ImageButton
+                android:id="@+id/imgbtn_checkinOut_attendance"
+                android:layout_width="320dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="false"
+                android:background="@null"
+                android:src="@drawable/img_checkinout_attendance_button"
+            android:scaleType="fitXY"
+            android:layout_gravity="bottom"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

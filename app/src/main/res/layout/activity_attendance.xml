@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".attendance.Attendance"
+
+    android:background="#e1e1e1">
+
+
+    <ListView
+        android:id="@+id/lvattendace"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+    </ListView>
+
+
+
+</RelativeLayout>

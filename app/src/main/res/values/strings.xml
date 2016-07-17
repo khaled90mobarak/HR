@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MOS</string>
+    <string name="title_activity_side_menu">Side_menuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_news_list">NewsList</string>
+    <string name="title_activity_news_details">NewsDetails</string>
+    <string name="title_activity_forget_password">ForgetPassword</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_test_navigation_drawer">TestNavigationDrawer</string>
+    <string name="drawer_open">open navigation drawer</string>
+    <string name="drawer_close">close navigation drawer</string>
+
+    <string-array name="social">
+        <item>News</item>
+        <item>Attendance log</item>
+        <item>Inquiries</item>
+        <item>Logout</item>
+        <item>Salary</item>
+        <item>Check In/Out</item>
+        <item>Profile</item>
+        <item>Chat</item>
+    </string-array>
+
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_my_navigation">MyNavigation</string>
+    <string name="title_activity_new_navigation">NewNavigation</string>
+    <string name="title_activity_testing_news_list">TestingNewsList</string>
+    <string name="forget_password_label">Please enter your e-mail !</string>
+    <string name="forget_password_email_edittext">e-mail</string>
+    <string name="username_edittext">username</string>
+    <string name="password_edittext">password</string>
+    <string name="forget_password_button">Forget password</string>
+    <string name="logout_button">Logout</string>
+    <string name="title_activity_inquiries_details">InquiriesDetails</string>
+    <string name="title_activity_create_inquiry">CreateInquiry</string>
+    <string name="title_activity_check_in_out">CheckInOut</string>
+    <string name="title_activity_sending_exception">SendingException</string>
+    <string name="title_activity_ssss">Ssss</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_newsfeeds">News feeds</string>
+    <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_checkinout">checkinout</string>
+    <string name="title_activity_profile">profile</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

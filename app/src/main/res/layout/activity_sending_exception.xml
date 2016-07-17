@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#e4e4e4"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="320dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:id="@+id/layoutSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+            android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgInquiryStatus2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+
+            android:src="@drawable/img_spinner" />
+
+
+        <Spinner
+            android:id="@+id/spinner_reasons_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etNotes_check"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_above="@+id/btnSubmit_checkException"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="EMPLOYEE NOTES...."
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="8"
+            android:layout_marginTop="10dp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+      android:id="@+id/btnSubmit_checkException"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_alignParentBottom="false"
+      android:layout_alignParentLeft="false"
+      android:src="@drawable/img_send_exception"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

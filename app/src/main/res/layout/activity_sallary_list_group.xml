@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="100dp"
+
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="txtmonth"
+        android:id="@+id/txtmonth"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/payrool"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtmonth">
+
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:textSize="17dp"
+            android:textColor="#f9f93d" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/salary1" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtbasic"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="18dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtbenfits"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignTop="@+id/txtbasic"
+            android:layout_toRightOf="@+id/txtbasic"
+            android:layout_toEndOf="@+id/txtbasic"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtdeduct"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignTop="@+id/txtbenfits"
+            android:layout_toRightOf="@+id/txtbenfits"
+            android:layout_toEndOf="@+id/txtbenfits"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txttotal"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignTop="@+id/txtdeduct"
+            android:layout_toRightOf="@+id/txtdeduct"
+            android:layout_toEndOf="@+id/txtdeduct"
+            android:layout_marginLeft="2dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="13dp"
+        android:id="@+id/imgarrow"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+
+        android:src="@drawable/imgdown"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/payrool"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

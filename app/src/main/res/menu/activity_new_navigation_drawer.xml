@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newsfeeds"
+            android:icon="@drawable/news_feeds"
+            android:title="News feeds" />
+        <item
+            android:id="@+id/inquiries"
+            android:icon="@drawable/img_inquiry_new"
+            android:title="Inquiries" />
+        <item
+            android:id="@+id/checkinout"
+            android:icon="@drawable/checkinout"
+            android:title="Check in / Out" />
+        <!--<item-->
+            <!--android:id="@+id/chat"-->
+            <!--android:icon="@drawable/chat"-->
+            <!--android:title="Chat" />-->
+        <item
+            android:id="@+id/attendance_history"
+            android:icon="@drawable/attendance_history"
+            android:title="Attendance history" />
+        <item
+            android:id="@+id/salary_history"
+            android:icon="@drawable/salary_history"
+            android:title="Salary history" />
+
+    </group>
+
+    <item android:title="User">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/settings"-->
+                <!--android:icon="@drawable/settings"-->
+            <!--android:title="Settings" />-->
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@drawable/sign_out"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

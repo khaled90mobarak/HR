@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgInquiryStatus2"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_inquiry_red_shape" />
+
+            <TextView
+                android:id="@+id/tvInquiryEmpFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgInquiryStatus2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgInquiryStatus2"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvInquiryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInquiryEmpFrom"
+            android:layout_centerHorizontal="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_margin="10dp" />
+
+        <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+        >
+
+            <ImageView
+            android:id="@+id/imgInquiryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tvInquiryMessage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_inquiry_pending"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+             />
+
+            <TextView
+                android:id="@+id/tvInquiryMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="23dp"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:id="@+id/thirdLayout"
+            android:layout_marginBottom="20dp">
+
+
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+        android:src="@drawable/img_inquiry_replies"
+
+        />
+
+    <TextView
+        android:id="@+id/tvInquiryRepliesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="TextView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvInquiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvInquiryRepliesCount"
+        android:layout_alignBottom="@+id/tvInquiryRepliesCount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:layout_alignParentBottom="true"
+        android:text="TextView"
+        android:layout_marginBottom="5dp"
+        android:textColor="#EB1112"
+        />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
